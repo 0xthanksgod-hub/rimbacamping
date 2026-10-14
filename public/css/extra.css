@@ -1,0 +1,97 @@
+/* Tambahan di luar desain Figma: toast, notifikasi, pembayaran bank, halaman admin baru. */
+:root { --danger: #b3382c; --info: #1f5f8b; }
+
+#toast-box { position: fixed; right: 18px; bottom: 90px; z-index: 200; display: grid; gap: 8px; max-width: min(360px, calc(100% - 36px)); }
+.toast { padding: 12px 16px; border-radius: 12px; color: #fff; background: var(--ink); font-size: 14px; font-weight: 600; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.toast.success { background: var(--success); }
+.toast.error { background: var(--danger); }
+
+.notice { margin: 0 0 16px; padding: 12px 16px; border-radius: 12px; color: #6d430c; background: var(--orange-soft); font-size: 14px; line-height: 1.5; }
+.notice.danger { color: #7d2219; background: #fbe5e2; }
+.notice code, .hint code { padding: 1px 6px; border-radius: 6px; background: rgba(0,0,0,.07); font-size: 12px; }
+.hint { color: var(--muted); font-size: 13px; line-height: 1.5; }
+.hint.pad, .pad { padding: 18px 20px; }
+.muted { color: var(--muted); }
+.empty-note, .empty-cell { padding: 24px; color: var(--muted); text-align: center; grid-column: 1 / -1; }
+
+.status-badge.info { color: #174e73; background: #e0eff9; }
+.status-badge.danger { color: #8f2a20; background: #fbe5e2; }
+
+/* pembayaran bank (wizard) */
+.bank-row { min-height: 60px; padding: 0 16px; display: flex; align-items: center; gap: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--white); }
+.payment-panel .payment-list { display: grid; gap: 10px; margin: 18px 0; }
+.va-box { margin: 18px auto; padding: 18px 22px; width: min(420px, 100%); display: grid; gap: 6px; justify-items: center; border: 1px dashed var(--forest); border-radius: 16px; background: var(--forest-soft); }
+.va-box > span { color: var(--forest); font-weight: 800; }
+.va-box strong { font-size: 24px; letter-spacing: .06em; word-break: break-all; }
+.va-box small { color: var(--muted); }
+.pending-actions { margin: 14px 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.success-icon.fail { background: #fbe5e2; color: var(--danger); }
+.success-icon.wait { background: var(--orange-soft); color: var(--orange-dark); }
+#hold-timer { font-variant-numeric: tabular-nums; }
+.booking-header button[hidden] { visibility: hidden; display: block; }
+.booking-footer a.primary-button { text-decoration: none; }
+
+/* pesanan */
+.lookup-form { margin-bottom: 20px; display: flex; gap: 10px; max-width: 560px; }
+.lookup-form input { flex: 1; min-height: 48px; padding: 0 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
+.order-card + .order-card { margin-top: 16px; }
+.order-card.empty { text-align: center; display: grid; gap: 14px; justify-items: center; padding: 36px; }
+.order-body.total-line { border-top: 1px solid var(--line); padding-top: 12px; }
+
+/* login admin */
+.login-page { min-height: 100vh; display: grid; place-items: center; padding: 20px; background: var(--cream); }
+.login-card { width: min(420px, 100%); padding: 32px; display: grid; gap: 14px; border-radius: 20px; background: var(--white); box-shadow: 0 18px 50px rgba(8,25,18,.12); }
+.login-card h1 { margin-top: 10px; font-size: 26px; color: var(--forest-dark); }
+.login-card p { color: var(--muted); margin-bottom: 6px; }
+.login-card label { display: grid; gap: 6px; font-size: 13px; font-weight: 700; color: var(--muted); }
+.login-card input { min-height: 46px; padding: 0 14px; border: 1px solid var(--line); border-radius: 12px; font-size: 15px; color: var(--ink); }
+
+/* admin */
+.admin-main { background: #f5f6f4; }
+.admin-sidebar nav a { text-decoration: none; }
+.admin-sidebar nav a:hover { background: var(--forest-soft); }
+.admin-content table { font-size: 13px; }
+.admin-content th { font-size: 11px; }
+.admin-content td small { font-size: 12px; }
+.admin-content .row-action { font-size: 13px; }
+.admin-card h3 { color: var(--forest-dark); }
+.icon-btn { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 8px; color: var(--muted); }
+.icon-btn:hover { background: var(--forest-soft); color: var(--forest); }
+.toolbar { margin-bottom: 14px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+.toolbar .chips { margin: 0; }
+.mini-btn { min-height: 30px; padding: 0 10px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 8px; color: var(--forest); background: var(--white); font-size: 12px; font-weight: 800; }
+.mini-btn:hover { background: var(--forest-soft); }
+.mini-btn.danger { color: var(--danger); }
+td.actions { display: flex; gap: 6px; }
+.thumb { width: 56px; height: 44px; object-fit: cover; border-radius: 8px; }
+.stock-pill { min-width: 30px; padding: 3px 10px; display: inline-block; border-radius: 999px; text-align: center; font-weight: 800; color: #176744; background: #e3f4ea; }
+.stock-pill.low { color: #96530b; background: var(--orange-soft); }
+.stock-pill.out { color: #8f2a20; background: #fbe5e2; }
+.admin-card.pad { margin-bottom: 16px; }
+.kv { margin: 14px 0; display: grid; grid-template-columns: 160px 1fr; gap: 10px 16px; font-size: 14px; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; }
+.bank-card { margin-bottom: 16px; }
+.bank-card .bank-toggles { padding: 14px 0 0; display: flex; flex-wrap: wrap; gap: 12px; }
+.toggle { padding: 10px 14px; display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 12px; font-size: 14px; font-weight: 700; cursor: pointer; background: var(--white); }
+.toggle input { position: absolute; opacity: 0; }
+.toggle .switch { width: 36px; height: 20px; position: relative; border-radius: 999px; background: #cfd5d1; transition: .2s; }
+.toggle .switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: .2s; }
+.toggle input:checked + .switch { background: var(--forest); }
+.toggle input:checked + .switch::after { transform: translateX(16px); }
+.toggle input:focus-visible + .switch { outline: 3px solid rgba(242,140,40,.35); outline-offset: 2px; }
+.admin-empty h2 { margin-top: 0; }
+@media (max-width: 720px) {
+  .kv { grid-template-columns: 1fr; }
+  .lookup-form { flex-direction: column; }
+  .admin-sidebar .admin-profile { display: none; }
+}
+
+/* Transfer manual */
+.proof-form { margin: 14px auto 0; width: min(420px, 100%); display: grid; gap: 10px; text-align: left; }
+.proof-pick { min-height: 52px; padding: 0 16px; display: flex; align-items: center; gap: 10px; border: 1.5px dashed var(--forest); border-radius: 14px; background: var(--white); color: var(--forest); font-weight: 700; cursor: pointer; overflow: hidden; }
+.proof-pick span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.proof-pick input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.proof-pick:focus-within { outline: 3px solid rgba(242,140,40,.35); outline-offset: 2px; }
+.pay-block { padding: 6px 0 0; }
+.bank-form { padding: 14px 0 0; align-items: end; }

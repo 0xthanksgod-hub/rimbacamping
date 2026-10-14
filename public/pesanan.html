@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesanan Saya - RimbaCamp</title>
+  <meta name="description" content="Pantau status pembayaran dan jadwal pengambilan alat camping." />
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/extra.css" />
+</head>
+<body>
+  <div id="site-header" data-active="pesanan"></div>
+  <main class="page-shell orders-page">
+    <div class="container">
+      <div class="page-heading">
+        <span class="eyebrow">Akun saya</span>
+        <h1>Pesanan Saya</h1>
+        <p>Pantau jadwal dan status perlengkapan yang kamu sewa.</p>
+      </div>
+      <form id="lookup" class="lookup-form">
+        <input id="lookup-code" placeholder="Punya kode booking? Contoh: RMC-251014-AB12C" aria-label="Kode booking" />
+        <button class="secondary-button" type="submit">Cari pesanan</button>
+      </form>
+      <div id="orders"></div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/product-ui.js"></script>
+  <script src="/js/payment-ui.js"></script>
+  <script src="/js/booking.js"></script>
+  <script src="/js/pesanan.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Alat Camping - RimbaCamp</title>
+  <meta name="description" content="Katalog perlengkapan camping RimbaCamp: tenda, carrier, sleeping bag, dan kompor." />
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/extra.css" />
+</head>
+<body>
+  <div id="site-header" data-active="katalog"></div>
+  <main class="page-shell">
+    <section class="catalog-hero">
+      <div class="container">
+        <span class="eyebrow">Katalog RimbaCamp</span>
+        <h1>Temukan teman terbaik untuk petualanganmu</h1>
+        <p>Pilih tanggal untuk melihat stok yang benar-benar tersedia.</p>
+        <div id="catalog-search"></div>
+      </div>
+    </section>
+    <section class="section container">
+      <div class="catalog-toolbar">
+        <div class="search-input"><i data-lucide="search" width="19" height="19" ></i><input id="q" placeholder="Cari tenda, carrier, kompor..." aria-label="Cari alat" /></div>
+        <select id="sort" aria-label="Urutkan produk">
+          <option value="populer">Urutkan: Paling populer</option>
+          <option value="murah">Harga terendah</option>
+          <option value="mahal">Harga tertinggi</option>
+        </select>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="catalog-result"><p>Menampilkan <strong id="result-count">0 alat</strong> yang tersedia</p></div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/product-ui.js"></script>
+  <script src="/js/payment-ui.js"></script>
+  <script src="/js/booking.js"></script>
+  <script src="/js/katalog.js"></script>
+</body>
+</html>

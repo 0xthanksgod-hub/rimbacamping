@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Masuk - Admin RimbaCamp</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/extra.css" />
+</head>
+<body>
+  <main class="login-page">
+    <form id="login-form" class="login-card" autocomplete="on">
+      <a class="brand-button" href="/" aria-label="RimbaCamp"><div class="brand"><span class="brand-mark"><i data-lucide="tent-tree" width="24" height="24"></i></span><span><strong>Rimba</strong>Camp</span></div></a>
+      <h1>Masuk admin</h1>
+      <p>Kelola booking, stok, dan pembayaran toko.</p>
+      <label>Email<input id="email" type="email" autocomplete="username" required /></label>
+      <label>Password<input id="password" type="password" autocomplete="current-password" required /></label>
+      <div id="login-error" class="notice danger" role="alert" hidden></div>
+      <button class="primary-button wide" type="submit">Masuk</button>
+    </form>
+  </main>
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/admin/login.js"></script>
+</body>
+</html>

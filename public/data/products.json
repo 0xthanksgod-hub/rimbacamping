@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Tenda Summit Pro 4P",
+    "category": "Tenda",
+    "price": 85000,
+    "stock": 2,
+    "image": "https://images.unsplash.com/photo-1602079108581-4c5071154299?auto=format&fit=crop&w=900&q=85",
+    "popular": true,
+    "description": "Tenda double layer yang lega, tahan hujan, dan mudah dipasang untuk perjalanan keluarga atau kelompok kecil.",
+    "specs": ["4 orang", "3,8 kg", "Double layer"]
+  },
+  {
+    "id": 2,
+    "name": "Carrier Alpine 60L",
+    "category": "Carrier",
+    "price": 55000,
+    "stock": 5,
+    "image": "https://images.unsplash.com/photo-1592388748465-8c4dca8dd703?auto=format&fit=crop&w=900&q=85",
+    "popular": true,
+    "description": "Carrier ergonomis dengan rain cover, bantalan punggung berventilasi, dan kompartemen lengkap.",
+    "specs": ["60 liter", "1,9 kg", "Rain cover"]
+  },
+  {
+    "id": 3,
+    "name": "Sleeping Bag Polar",
+    "category": "Sleeping Bag",
+    "price": 35000,
+    "stock": 8,
+    "image": "https://images.unsplash.com/photo-1558477280-1bfed08ea5db?auto=format&fit=crop&w=900&q=85",
+    "description": "Sleeping bag hangat dan ringan untuk suhu pegunungan hingga 8°C dengan bahan yang lembut.",
+    "specs": ["Comfort 8°C", "900 gram", "Polyester"]
+  },
+  {
+    "id": 4,
+    "name": "Paket Masak Trail",
+    "category": "Kompor",
+    "price": 40000,
+    "stock": 1,
+    "image": "https://images.unsplash.com/photo-1596055746427-d5f61aa5df99?auto=format&fit=crop&w=900&q=85",
+    "description": "Set kompor portable dan nesting yang praktis untuk memasak makanan hangat di perjalanan.",
+    "specs": ["2–3 orang", "650 gram", "Piezo ignition"]
+  }
+]
